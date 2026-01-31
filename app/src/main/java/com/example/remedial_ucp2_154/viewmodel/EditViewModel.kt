@@ -51,7 +51,6 @@ class EditViewModel(
     }
 }
 
-// Fungsi extension untuk konversi dari Entity ke UI State
 fun com.example.remedial_ucp2_154.modeldata.Buku.toUiStateBuku(isEntryValid: Boolean = false): BukuUIState = BukuUIState(
     bukuEvent = this.toBukuEvent(),
     isEntryValid = isEntryValid
