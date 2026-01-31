@@ -18,7 +18,6 @@ class EntryViewModel(private val repositoriBuku: RepositoriBuku) : ViewModel() {
         )
     }
 
-    // Validasi tipe data ketat
     private fun validasiInput(uiEvent: BukuEvent): Boolean {
         return with(uiEvent) {
             judul.isNotBlank() && penulis.isNotBlank() && idKategori != null
